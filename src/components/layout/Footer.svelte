@@ -57,7 +57,7 @@
           Designed By Glory Katende
           <ion-icon
             name="arrow-forward-circle"
-            class="text-2xl text-green-400 ml-3"
+            class="text-2xl text-green-400 ml-2"
           />
         </a>
       </div>

@@ -19,8 +19,8 @@
   FORMS CUSTOMIZATION 
 ***********************************************************************************************/
 
-select, input[type="file"], input[type="text"], input[type="date"], input[type="datetime-local"], input[type="time"], input[type="email"], input[type="password"], input[type="number"], textarea, .selectContainer {
-  @apply text-sm rounded-lg border-none cursor-pointer bg-white text-gray-800 shadow-sm !important;
+select, input[type="text"], input[type="file"], input[type="date"], input[type="email"], input[type="password"], input[type="number"], textarea, .selectContainer, .selectContainer input, .selectContainer .listContainer {
+  @apply rounded-xl border-none ring-1 ring-gray-200 cursor-pointer text-gray-800 shadow-sm !important;
 }
 
 select, input[type="file"], input[type="text"], input[type="date"], input[type="datetime-local"], input[type="time"], input[type="email"], input[type="password"], input[type="number"], textarea {
@@ -28,7 +28,7 @@ select, input[type="file"], input[type="text"], input[type="date"], input[type="
 }
 
 select:focus, input[type="datetime-local"]:focus, input[type="text"]:focus, input[type="file"]:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, textarea:focus, .selectContainer input:focus {
-  @apply outline-none ring-0 !important;
+  @apply outline-none ring-1 ring-green-400/50 !important;
 }
 
 /* input[type="file"]::placeholder, input[type="datetime-local"]::placeholder, input[type="text"]::placeholder, input[type="date"]::placeholder, input[type="time"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder, input[type="number"]::placeholder, .selectContainer input::placeholder { */
@@ -39,7 +39,7 @@ select:focus, input[type="datetime-local"]:focus, input[type="text"]:focus, inpu
 }
 
 *:focus {
-  @apply outline-none ring-0 !important;
+  @apply outline-none !important;
 }
 
 /* 

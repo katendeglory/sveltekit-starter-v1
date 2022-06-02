@@ -1,5 +1,6 @@
 <script>
   import Container from "../utils/Container.svelte";
+  import Select from "svelte-select";
 </script>
 
 <Container>
@@ -10,19 +11,25 @@
       <h1
         class="mb-5 h-font font-bold md:pt-10 text-5xl sm:text-5xl md:text-5xl lg:text-6xl"
       >
-        Hey There! Welcome to Your Online Supermarket!
+        Welcome to Your Online Supermarket!
       </h1>
 
       <p class="mb-5 text-gray-500">
-        We've kept the best deals out there just for you! If you're a student,
-        Sign up with Us and be prepared for an amazing shopping experience. We
-        can't wait to have you on boaord!
+        We've kept the best deals out there for you! Sign up and be prepared for
+        an amazing shopping experience. We can't wait to have you on boaord!
       </p>
+
+      <div class="delete-me">
+        <div class="mb-3 w-[14.5rem]">
+          <input class="shadow-sm" type="text" placeholder="🔍 Search" />
+        </div>
+      </div>
 
       <a href="#explore" class="btn btn-primary">
         See Our Collection
         <ion-icon name="arrow-forward-circle-outline" class="text-2xl ml-2" />
       </a>
+
       <div class="mt-5 flex">
         <a href="#home">
           <ion-icon name="logo-facebook" class="text-gray-500 text-3xl mr-3" />
