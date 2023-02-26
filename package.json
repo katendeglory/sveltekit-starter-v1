@@ -11,8 +11,6 @@
     "build": "yarn run tailwind:build && yarn run build:only && yarn run injectManifest",
     "serve": "serve build -p 80",
     "git:push": "git add . && git commit -am \"Yet another commit\" && git push origin main",
-    "web:build": "yarn run build && Xcopy /E /I /Y .\\build .\\..\\build",
-    "web:deploy": "yarn run web:build && cd ../build && yarn run git:push && cd ../client",
     "surge:deploy": "yarn run build && surge build https://781227.surge.sh/",
     "surge:teardown": "surge teardown https://781227.surge.sh/",
     "generateSW": "workbox generateSW",
